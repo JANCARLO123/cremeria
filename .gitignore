@@ -27,8 +27,5 @@ nbdist/
 .nb-gradle/
 
 
-build.gradle
-gradle/
-gradlew.bat
 
 
