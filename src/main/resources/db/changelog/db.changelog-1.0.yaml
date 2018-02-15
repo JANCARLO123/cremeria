@@ -74,3 +74,27 @@ databaseChangeLog:
                       nullable: false
                       foreignKeyName: fk_role_id
                       references: roles(id)
+  - changeSet:
+        id: 4
+        author: jancarlo
+        changes:
+          - createTable:
+              tableName: Prueba
+              columns:
+                - column:
+                    name: id
+                    type: int
+                    autoIncrement: true
+                    constraints:
+                      primaryKey: true
+                      nullable: false
+                - column:
+                    name: name
+                    type: varchar(30)
+                    constraints:
+                      nullable: false
+                - column:
+                    name: description
+                    type: varchar(255)
+                    constraints:
+                      nullable: false

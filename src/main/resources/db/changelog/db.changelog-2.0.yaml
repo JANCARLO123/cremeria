@@ -1,0 +1,14 @@
+databaseChangeLog:
+    - changeSet:
+        id: 5
+        author: jancarlo
+        changes:
+          - insert:
+              tableName: Prueba
+              columns:
+                - column:
+                    name: name
+                    value: Marcel
+                - column:
+                    name: description
+                    value: descripcion
