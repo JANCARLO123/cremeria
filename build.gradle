@@ -40,7 +40,7 @@ dependencies {
 	//compile('org.springframework.boot:spring-boot-starter-amqp')
 	//compile('org.springframework.boot:spring-boot-starter-aop')
 	compile('org.springframework.boot:spring-boot-starter-security')
-	compile('org.thymeleaf.extras:thymeleaf-extras-springsecurity4:2.1.2.RELEASE')
+	compile('org.thymeleaf.extras:thymeleaf-extras-springsecurity4')
 
 	compile('org.springframework.boot:spring-boot-starter-mail')
 	compile('org.springframework.boot:spring-boot-starter-thymeleaf')
