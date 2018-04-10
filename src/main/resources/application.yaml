@@ -10,7 +10,7 @@ spring:
 spring:
   profiles: dev
   datasource:
-    url: jdbc:h2:mem:devData
+    url: jdbc:h2:mem:devData;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE
   liquibase:
     enabled: true
     change-log: classpath:db/changelog/db.changelog-master.yaml
@@ -27,7 +27,7 @@ spring:
 spring:
   profiles: prod
   datasource:
-    url: jdbc:h2:mem:prodData
+    url: jdbc:h2:mem:prodData;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE
   liquibase:
     enabled: true
     change-log: classpath:db/changelog/db.changelog-master.yaml

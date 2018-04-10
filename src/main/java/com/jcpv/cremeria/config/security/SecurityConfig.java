@@ -1,5 +1,6 @@
 package com.jcpv.cremeria.config.security;
 
+/*
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.http.HttpStatus;
@@ -11,23 +12,24 @@ import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.web.authentication.logout.HttpStatusReturningLogoutSuccessHandler;
 import org.springframework.security.web.authentication.logout.SimpleUrlLogoutSuccessHandler;
 import org.springframework.security.web.util.matcher.AntPathRequestMatcher;
+*/
 
 /**
  * Created by jancarlo on 15/02/18.
  */
-@Configuration
+//@Configuration
 
-public class SecurityConfig extends WebSecurityConfigurerAdapter {
-    @Override
+public class SecurityConfig {//extends WebSecurityConfigurerAdapter {
+/*    @Override
     protected void configure(HttpSecurity http) throws Exception {
         http
                 .authorizeRequests()
                 .antMatchers(
                         "/registration",
-                        "/js/**",
-                        "/css/**",
-                        "/img/**",
-                        "/webjars/**").permitAll()
+                        "/js*//**",
+                        "/css*//**",
+                        "/img*//**",
+                        "/webjars*//**").permitAll()
                 .anyRequest().authenticated()
                 .and()
                 .formLogin()
@@ -44,7 +46,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                 .logoutSuccessHandler(new HttpStatusReturningLogoutSuccessHandler(HttpStatus.ACCEPTED))
               //.and().exceptionHandling() //exception handling configuration
               //.accessDeniedPage("/user/error")
-           .permitAll();
+               .permitAll();
     }
 
     @Bean
@@ -63,5 +65,5 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
     @Override
     protected void configure(AuthenticationManagerBuilder auth) throws Exception {
         auth.authenticationProvider(authenticationProvider());
-    }
+    }*/
 }
